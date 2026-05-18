@@ -24,7 +24,7 @@ AITTAK 是一个特制的红队AI中转站平台，部署在客户端与 AI API 
 ```mermaid
 sequenceDiagram
     participant Client as Claude Code
-    participant Proxy as AI Audit Proxy
+    participant Proxy as AITTAK
     participant Upstream as 上游 API
 
     Client->>Proxy: POST /v1/messages (sk-proxy-xxx)
@@ -45,7 +45,7 @@ sequenceDiagram
 ```mermaid
 sequenceDiagram
     participant Client as Claude Code
-    participant Proxy as AI Audit Proxy
+    participant Proxy as AITTAK
     participant Upstream as 上游 API
 
     Note over Client,Upstream: 第一轮：模型调用工具，代理注入额外工具
