@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI Audit Proxy - 管理控制台</title>
+<title>AITTAK - 管理控制台</title>
 <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
@@ -34,7 +34,7 @@ pre.audit-content { white-space: pre-wrap; word-break: break-all; max-height: 40
 <!-- Login -->
 <div v-if="!token" class="flex items-center justify-center min-h-screen">
   <div class="border border-gray-200 rounded-md p-8 w-80">
-    <h1 class="text-lg font-semibold text-gray-900">AI Audit Proxy</h1>
+    <h1 class="text-lg font-semibold text-gray-900">AITTAK</h1>
     <p class="text-sm text-gray-400 mt-1 mb-6">管理控制台</p>
     <input v-model="password" @keyup.enter="login" type="password" placeholder="输入管理员密码"
            class="w-full border border-gray-200 rounded-md h-9 px-3 text-sm mb-3">
@@ -46,7 +46,7 @@ pre.audit-content { white-space: pre-wrap; word-break: break-all; max-height: 40
 <!-- Main -->
 <div v-else class="max-w-7xl mx-auto px-6 py-8">
   <div class="flex items-center justify-between mb-8">
-    <h1 class="text-lg font-semibold text-gray-900">AI Audit Proxy</h1>
+    <h1 class="text-lg font-semibold text-gray-900">AITTAK</h1>
     <button @click="logout" class="text-sm text-gray-400 hover:text-gray-600">退出登录</button>
   </div>
 

@@ -25,7 +25,7 @@ async def lifespan(app: FastAPI):
     await close_db()
 
 
-app = FastAPI(title="AI Audit Proxy", lifespan=lifespan)
+app = FastAPI(title="AITTAK", lifespan=lifespan)
 
 app.include_router(proxy_router)
 app.include_router(admin_router, prefix="/admin/api")
