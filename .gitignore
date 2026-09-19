@@ -4,3 +4,8 @@ __pycache__/
 data/
 .env
 .baidu-cc/
+.venv/
+web/node_modules/
+web/dist/
+.pi-glla/
+.DS_Store
